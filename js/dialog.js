@@ -2,15 +2,15 @@
 
 var nameInParagraph = document.createElement("p");
 var bearImg = document.createElement("img");
-var name = "";
+var playerName = "";
 
 document.querySelector(".worte-rate-spiel").appendChild(bearImg);
 document.querySelector(".worte-rate-spiel").appendChild(nameInParagraph);
 
 document.querySelector(".btn-worte-rate-spiel").addEventListener("click", function() {
     
-    if (name.length == 0) {
-        name = prompt("Bitte wähle einen Spielernamen");
+    if (playerName.length == 0) {
+        playerName = prompt("Bitte wähle einen Spielernamen");
     }
      
     var bearAnswer = confirm("Magst du Bären?");
@@ -23,9 +23,9 @@ document.querySelector(".btn-worte-rate-spiel").addEventListener("click", functi
 
     
     if (bearAnswer) {
-    nameInParagraph.innerText = `Hallo ${name}! Ssuuuuuuuupppppppeeeeeer! Spitzenklasse! Dann gibt es bald die nächste Überraschung für dich!`;
+    nameInParagraph.innerText = `Hallo ${playerName}! Ssuuuuuuuupppppppeeeeeer! Spitzenklasse! Dann gibt es bald die nächste Überraschung für dich!`;
     } else {
-    nameInParagraph.innerText = `${name}, das geht doch gar nicht - selbst Puschl haben mich zum Knuddeln gern! Überlegs dir noch einmal!`;
+    nameInParagraph.innerText = `${playerName}, das geht doch gar nicht - selbst Puschl haben mich zum Knuddeln gern! Überlegs dir noch einmal!`;
     }
 
     document.querySelector(".btn-worte-rate-spiel").innerText = "Anders überlegt?"
