@@ -1,30 +1,34 @@
 // just a simply dialog with the host
 
+var nameInParagraph = document.createElement("p");
+var bearImg = document.createElement("img");
+var name = "";
+
+document.querySelector(".worte-rate-spiel").appendChild(bearImg);
+document.querySelector(".worte-rate-spiel").appendChild(nameInParagraph);
 
 document.querySelector(".btn-worte-rate-spiel").addEventListener("click", function() {
-
-    var name = prompt("Bitte wähle einen Spielernamen");
-    var nameInParagraph = document.createElement("p");
-
+    
+    if (name.length == 0) {
+        name = prompt("Bitte wähle einen Spielernamen");
+    }
+     
     var bearAnswer = confirm("Magst du Bären?");
-    var bearImg = document.createElement("img");
 
     if (bearAnswer) {     
         bearImg.src = "https://images-na.ssl-images-amazon.com/images/I/8117WURKQHL._AC_SL1200_.jpg"
     } else {
-        bearImg.src = "https://i.pinimg.com/originals/74/60/5f/74605f7f18ad75ab6935508aca36b754.jpg"    
+        bearImg.src = "https://static.boredpanda.com/blog/wp-content/uploads/2019/11/jill-rescue-squirrel-miniature-teddy-bear-this-girl-is-a-squirrel-fb2.png"    
     }
 
-    document.querySelector(".worte-rate-spiel").appendChild(bearImg);
     
-
     if (bearAnswer) {
-    nameInParagraph.innerText = `Hallo ${name}! Freut mich! Morgen geht es weiter!`;
+    nameInParagraph.innerText = `Hallo ${name}! Ssuuuuuuuupppppppeeeeeer! Spitzenklasse! Dann gibt es bald die nächste Überraschung für dich!`;
     } else {
-    nameInParagraph.innerText = `Hallo ${name}! Schadddeeeeeeeeeeee, dass du keine Bären magst! :((((((((((`;
+    nameInParagraph.innerText = `${name}, das geht doch gar nicht - selbst Puschl haben mich zum Knuddeln gern! Überlegs dir noch einmal!`;
     }
 
-    document.querySelector(".worte-rate-spiel").appendChild(nameInParagraph);
+    document.querySelector(".btn-worte-rate-spiel").innerText = "Anders überlegt?"
 
 })
 
