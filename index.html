@@ -16,22 +16,57 @@
 
     <section>
 
-        <h1>Hallo Karina!</h1>
-        <p>Das ist meine Experimentierseite für HTML/CSS und vor allem JavaScript Spiele.</p>
+        <h1>Hallo!</h1>
+        <p>Das ist einerseits Dokumentationsseite für meine Lieblingsrezepte, andereseits Experimentierseite für HTML/CSS und JavaScript-Spielerein.</p>
 
     </section>
 
-    <section class="worte-rate-spiel">
-        <h2>Wort Rate Spiel</h2>
 
-        <button class="btn-worte-rate-spiel">Klick mich!</button>
+    <section class="word-riddle-area">
+
+        <article class="word-riddle-header">
+
+            <h2>Wort Rate Spiel</h2>
+            
+            <p>
+            Anleitung:
+                <ul>
+                    <li>Gib einen Buchstaben oder das gesuchte Wort ein und drücke auf "Tipp abgeben".</li>
+                    <li>"Neues Wort" startet eine neue Runde</li>
+                    <li>"Beenden" bricht die Rund ab</li>                    
+                </ul>
+            Drücke auf "Tipp abgeben"
+            </p>
+
+            <button class="btn-word-riddle">Neues Wort</button>
+
+        </article>
+
+        <article class="word-riddle-input">
+            
+            <label for="word-riddle-guess"> Hier den Buchstaben oder das gesuchte Wort eingeben.</label>
+            <input type="text" name="word-riddle-guess" class="word-riddle-guess">
+  
+            <button class="btn-word-guess">Tipp abgeben</button>
+
+        </article>
+
+        <article class="word-riddle-word">
+            
+            <p class="word-to-guess">
+                
+            </p>
+
+        </article>
+
 
 
     </section>
+
 
 </div>
 
-<script src="js/dialog.js"></script>
+<script src="js/wordriddle.js"></script>
 
 </body>
 
