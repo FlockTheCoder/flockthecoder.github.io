@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>FlockTheCoder's Profile Page</title>
+    <title>FlockTheCoder's Profile Page - Home</title>
 
     <link href="css/styles.css" rel="stylesheet">
   
@@ -14,60 +14,60 @@
 
 <div class="wrapper">
 
-    <section>
+    <section class="header">
 
-        <h1>Hallo!</h1>
-        <p>Das ist einerseits Dokumentationsseite für meine Lieblingsrezepte, andererseits Experimentierseite für HTML/CSS und JavaScript-Spielerein.</p>
+        <div class="banner">
+            
+        </div>
+
+        <nav>
+            <ul>
+                <a class="selected-page" href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="eating.html"><li>Eating</li></a>
+                <a href="games.html"><li>Games</li></a>
+            </ul>
+        </nav>
 
     </section>
 
 
-    <section class="word-riddle-area">
+    <section class ="intro">
 
-        <article class="word-riddle-header">
+        <h1>Willkommen!</h1>
+        <p>Das ist einerseits Dokumentationsseite für meine Lieblingsrezepte, andererseits Experimentierseite für HTML/CSS und Vanilla JavaScript Spielerein.</p>
+        <p>Aktuell ist die Seite in der Phase der Content-Generierung, das Design wird im Laufe der Zeit nachgezogen.</p>
+        
+    </section>
 
-            <h2>Wort Rate Spiel</h2>
-            
-            <p>
-            Anleitung:
-                <ul>
-                    <li>Gib einen Buchstaben oder das gesuchte Wort ein und drücke auf "Tipp abgeben".</li>
-                    <li>"Neues Wort" startet eine neue Runde</li>
-                    <li>"Beenden" bricht die Rund ab</li>                    
-                </ul>
-            Drücke auf "Tipp abgeben"
-            </p>
+    <section class="teaser">
 
-            <button class="btn-word-riddle">Neues Wort</button>
-
+        <article>
+            <h2>All About Me</h2>
+            <img src="" alt="">
         </article>
 
-        <article class="word-riddle-input">
-            
-            <label for="word-riddle-guess"> Hier den Buchstaben oder das gesuchte Wort eingeben.</label>
-            <input type="text" name="word-riddle-guess" class="word-riddle-guess">
-  
-            <button class="btn-word-guess">Tipp abgeben</button>
-
+        <article>
+            <h2>Clean Eating Rezepte</h2>
+            <img src="" alt="">
         </article>
 
-        <article class="word-riddle-word">
-            
-            <p class="word-to-guess">
-                
-            </p>
-
+        <article>
+            <h2>Vanilla JavaScript Games</h2>
+            <img src="" alt="">
         </article>
-
 
 
     </section>
 
+    <section class="contact">
 
-</div>
+    </section>
 
-<script src="js/wordriddle.js"></script>
+    <section class="footer">
 
+    </section>
+    
 </body>
 
 </html>

@@ -4,11 +4,20 @@
     box-sizing: border-box;
 }
 
+/* Basic Styles */
+
 html {
     background-color: darkslategrey;
-    color: lightblue;
+    color: lightgrey;
     font-size: 1rem;
 }
+
+h1 {font-size: 2rem;}
+h2 {font-size: 1.5rem;}
+h3 {font-size: 1.17rem;}
+h4 {font-size: 1.12rem;}
+h5 {font-size: 0.83rem;}
+h6 {font-size: 0.75rem;}
 
 .wrapper {
 
@@ -16,7 +25,8 @@ html {
     margin-left:  auto; 
 
     max-width: 960px;
-
+    width: 90%;
+    
     padding-right: 1rem; 
     padding-left:  1rem; 
 
@@ -34,6 +44,44 @@ article {
 
 button {
     width: 40%;
+}
+
+a:link,a:visited,a:active {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+a:hover {
+    background-color: lightgrey;
+    color: grey;
+}
+
+
+/* Header */
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 80%;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.selected-page li {
+    color: grey;
 }
 
 
