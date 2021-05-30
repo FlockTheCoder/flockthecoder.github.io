@@ -12,77 +12,84 @@
 
 <body>
 
-    <div class="wrapper">
-    
-        <section class="header">
+<div class="wrapper">
 
-            <div class="banner">
-                
-            </div>
+    <header class="header">
+
+        <nav>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="eating.html"><li>Eating</li></a>
+                <a class="selected-page" href="games.html"><li>Games</li></a>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <section class ="intro">
+
+        <h1>Games</h1>
+        <p>Hier findest du Spiele auf Vanilla JavaScript-Basis, ohne Hilfe von Bibliotheken.</p>
+        <p>No Shortcuts, just plain Code.</p>
+
+    </section>
+
+
+    <article class="word-riddle">
+        
+        <section class="word-riddle-header">
+
+            <h2>Wort Rate Spiel - Version 1.5</h2>
+
+            <p>Mein aller erstes Spiel. Die Idee dazu kam allerdings aus meinen JavaScript-Lernunterlagen. Habe mich allerdings nicht mit der Mindestanforderung zufrieden gegeben.</p>
+            <p>Aktuell nehme ich gerne Wünsche/Anregungen für funktionale Erweiterungen & Verbesserungen entgegen.</p>
             
-            <nav>
+            <p>
+            Anleitung:
                 <ul>
-                    <a href="index.html"><li>Home</li></a>
-                    <a href="about.html"><li>About</li></a>
-                    <a href="eating.html"><li>Eating</li></a>
-                    <a class="selected-page" href="games.html"><li>Games</li></a>
+                    <li>Gib einen Buchstaben oder das gesuchte Wort ein und drücke auf "Tipp abgeben".</li>
+                    <li>"Neues Wort" startet eine neue Runde</li>
+                    <li>"Beenden" bricht die Runde ab</li>                    
                 </ul>
-            </nav>
-    
+            Drücke auf "Tipp abgeben"
+            </p>
+
+            <button class="btn-word-riddle">Neues Wort</button>
+
         </section>
 
-        <section class ="intro">
-
-            <h1>Games</h1>
-            <p>Hier findest du Spiele auf Vanilla JavaScript-Basis, ohne Hilfe von Bibliotheken.</p>
-            <p>No Shortcuts, just plain Code.</p>
-    
-        </section>
-
-        <section class="word-riddle-area">
+        <section class="word-riddle-input">
             
-            <div class="word-riddle-header">
+            <label for="word-riddle-guess"> Hier den Buchstaben oder das gesuchte Wort eingeben.</label>
+            <input type="text" name="word-riddle-guess" class="word-riddle-guess">
     
-                <h2>Wort Rate Spiel - Version 1.5</h2>
+            <button class="btn-word-guess">Tipp abgeben</button>
 
-                <p>Mein aller erstes Spiel. Die Idee dazu kam allerdings aus meinen JavaScript-Lernunterlagen. Habe mich allerdings nicht mit der Mindestanforderung zufrieden gegeben.</p>
-                <p>Aktuell nehme ich gerne Wünsche/Anregungen für funktionale Erweiterungen & Verbesserungen entgegen.</p>
-                
-                <p>
-                Anleitung:
-                    <ul>
-                        <li>Gib einen Buchstaben oder das gesuchte Wort ein und drücke auf "Tipp abgeben".</li>
-                        <li>"Neues Wort" startet eine neue Runde</li>
-                        <li>"Beenden" bricht die Runde ab</li>                    
-                    </ul>
-                Drücke auf "Tipp abgeben"
-                </p>
-    
-                <button class="btn-word-riddle">Neues Wort</button>
-    
-            </div>
-    
-            <div class="word-riddle-input">
-                
-                <label for="word-riddle-guess"> Hier den Buchstaben oder das gesuchte Wort eingeben.</label>
-                <input type="text" name="word-riddle-guess" class="word-riddle-guess">
-      
-                <button class="btn-word-guess">Tipp abgeben</button>
-    
-            </div>
-    
-            <div class="word-riddle-word">
-                
-                <p class="word-to-guess">
-                    
-                </p>
-    
-            </div>
-    
         </section>
+
+        <section class="word-riddle-word">
+            
+            <p class="word-to-guess">
+                
+            </p>
+
+        </section>
+
+    </article>
+
+
+    <footer>
+
+    </footer>
+
     
-    
-    </div>
-    
-    <script src="js/wordriddle.js"></script>
+</div>
+
+<script src="js/wordriddle.js"></script>
+
+</body>
+
+</html>
     
