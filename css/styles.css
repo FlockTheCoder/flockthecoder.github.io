@@ -9,8 +9,10 @@
 html {
     background-color: darkslategrey;
     color: white;
+    
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 h1 {font-size: 2rem;}
@@ -110,13 +112,18 @@ nav ul li {
 
 /* Code Of Conduct Section */
 
-.coc-img-gallery {
-    flex-flow: column wrap;
-}
 
 .coc-img-gallery-box {
-    display: inline-block;
+    display: block;
     position: relative;
+    margin: 0 auto;
+    width: 30%;
+}
+
+@media (max-width: 450px) {
+    .coc-img-gallery-box {
+        width: 80%;
+    }
 }
 
 .coc-img-gallery-txt {
@@ -126,16 +133,18 @@ nav ul li {
 
     background-color: grey;
     color: white;
-        
-    padding: 2% 1%;
+ 
+    text-align: center;
+
+    padding: 3% 1%;
     margin: 0;
 
-    width: 30%;
+    width: 100%;
 }
 
 .coc-img-gallery-box img {
     display: block;
-    width: 30%;  
+    width: 100%;
 }
 
 
