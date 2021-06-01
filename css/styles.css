@@ -112,18 +112,33 @@ nav ul li {
 
 /* Code Of Conduct Section */
 
+.coc-img-gallery {
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: space-between;
+        
+}
 
 .coc-img-gallery-box {
     display: block;
     position: relative;
-    margin: 0 auto;
+
     width: 30%;
+
+    margin: 2% 0;
 }
 
 @media (max-width: 450px) {
     .coc-img-gallery-box {
         width: 80%;
     }
+}
+
+.coc-img-gallery-box img {
+    display: block;
+    width: 100%;
+
 }
 
 .coc-img-gallery-txt {
@@ -138,14 +153,11 @@ nav ul li {
 
     padding: 3% 1%;
     margin: 0;
-
+    
     width: 100%;
+
 }
 
-.coc-img-gallery-box img {
-    display: block;
-    width: 100%;
-}
 
 
 /* Games Styles */
