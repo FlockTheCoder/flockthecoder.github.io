@@ -239,6 +239,9 @@ blockquote::after {
 #contact > iframe {
     display: block;
     margin: 0 auto;
+    width: 80vw;
+    height: 60vw;
+    border: none;
 }
 
 #contact > table {
