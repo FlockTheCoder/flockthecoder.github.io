@@ -58,7 +58,7 @@ h1, h2, h3 {
 }
 
 hr {
-    width: 60vw;
+    width: 80vw;
     margin: 1rem auto;
     color: #384960
 }
@@ -232,10 +232,13 @@ video {
 }
 
 .review-hr {
-    width: 30vw;
+    width: 60vw;
 }
 
-blockquote {quotes: '\201E' '\201C';}
+blockquote {
+    quotes: '\201E' '\201C';
+    margin: 0.5rem;
+}
 
 blockquote::before {
     content: open-quote;
@@ -247,39 +250,54 @@ blockquote::after {
 
 .review-figure {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
     width: 70vw;
     margin: 1rem auto;
 }
 
 .review-figure img {
-    grid-column: 1;
-    grid-row: 1 / span 3;
     place-self: center end;
-    margin: 1rem;   
+    margin: 1rem;
+    max-width: 20vw;
 }
 
-.review-figure blockquote {
-    grid-row: 1 / span 2;
-    align-self: end;
-    margin: 0.5rem;
+@media only screen and (min-width: 1200px) {
+    .review-figure img {
+        max-width: 10vw;
+    }
 }
 
-.review-figure figcaption {
-    grid-row: 3;
-    align-self: start; 
+@media only screen and (min-width: 700px) {
+    .review-figure img {
+        max-width: 15vw;
+    }
+}
+
+.grid-group {
+    place-self: center start;
+    grid-column: 2;
+    grid-row: 1;
+
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.reverse .grid-group {
+    place-self: center end;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .reverse {
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
 }
 
 .reverse img {
-    grid-column: 2;
-    grid-row: 1 / span 3;
     place-self: center start;
+    grid-column: 2;
 }
+
 
 /* contact */
 
