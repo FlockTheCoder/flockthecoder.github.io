@@ -1,0 +1,31 @@
+
+
+.double-size-scale {
+    animation: double-size-scale 0.5s alternate infinite;
+}
+
+@keyframes double-size-scale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(2);
+    }
+}
+
+.changing-color {
+    animation: changing-color 2s both;
+}
+
+@keyframes changing-color {
+    from {
+        background-color: green;
+    }
+    to {
+        background-color: blue;
+    }
+}
+
+.skew45-20 {
+    transform: skew(45deg, 20deg);
+}
