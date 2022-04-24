@@ -1,5 +1,7 @@
 
+
 /* Animation Library Styles only */
+
 
 /* Task 1 */
 .double-size-scale {
@@ -48,13 +50,16 @@
     overflow: hidden;
     white-space: nowrap;
 
-    animation: typewriter 8s steps(80, end) forwards,
-               type 0.2s alternate infinite;
+    animation: typewriter 8s steps(80, end) forwards infinite,
+               type 0.3s alternate infinite;
 }
 
 @keyframes typewriter {
     0% {
         width: 0;
+    }
+    70% {
+        width: 100%;
     }
     100% {
         width: 100%;
@@ -66,13 +71,12 @@
         border-right: 3px solid black;
     }
     to {
-        border-right: 3px solid orange;
+        border-right: none;
     }
 }
 
 
 /* Task 5 */
-
 .circle {
     animation: bounce 1s alternate ease-in infinite;
 }
@@ -85,6 +89,9 @@
         transform: translateY(100px);
     }
 }
+
+/* Task 6 */
+.
 
 
 /* Task 8 */
@@ -104,7 +111,4 @@
 }
 
 /* Task 11 */
-.shadow {
-    box-shadow-bottom-right: 10px;
-    
-}
+
