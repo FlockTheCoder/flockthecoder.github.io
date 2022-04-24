@@ -50,11 +50,11 @@
     overflow: hidden;
     white-space: nowrap;
 
-    animation: typewriter 8s steps(80, end) forwards infinite,
+    animation: reveal 8s steps(80, end) forwards infinite,
                type 0.3s alternate infinite;
 }
 
-@keyframes typewriter {
+@keyframes reveal {
     0% {
         width: 0;
     }
@@ -90,8 +90,44 @@
     }
 }
 
+
 /* Task 6 */
-.
+.left-right {
+    margin-left: 0px;
+    margin-right: 0px;
+
+    position: absolute;
+
+    animation: left-right 2s alternate ease-in-out infinite;
+}
+
+@keyframes left-right {
+    from {
+        left: 0%;
+    }
+    to {
+        left: 60%;
+    }
+}
+
+
+/* Task 7 */
+.up-down {
+    position: fixed;
+
+    animation: up-down 2s alternate infinite;
+
+    margin: 0px;
+}
+
+@keyframes up-down {
+    from {
+        top: 0%;
+    }
+    to {
+        top: 20%;
+    }
+}
 
 
 /* Task 8 */
@@ -110,5 +146,19 @@
     
 }
 
+
+/* Task 9 */
+
+
+
+/* Task 10 */
+.text-shadow {
+    font-size: 2rem;
+    text-shadow: 3px 3px 5px;
+}
+
+
 /* Task 11 */
 
+
+/* Task 12 */

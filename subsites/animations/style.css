@@ -1,10 +1,14 @@
 
 div {
-    margin: 5rem;
+    margin: 4rem;
 }
 
 article {
     margin: 7.5rem 0rem;
+}
+
+.more-space {
+    margin-bottom: 15rem;
 }
 
 .square {
@@ -12,6 +16,26 @@ article {
     height: 100px;
     
     background-color: black;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.rectangle {
+    width: 200px;
+    height: 100px;
+    
+    background-color: black;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.square p {
+    color: white;
+    text-align: center;
 }
 
 .circle {
@@ -19,3 +43,4 @@ article {
     height: 50px;
     border-radius: 100%;
 }
+
