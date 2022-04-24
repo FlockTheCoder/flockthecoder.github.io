@@ -1,5 +1,7 @@
 
+/* Animation Library Styles only */
 
+/* Task 1 */
 .double-size-scale {
     animation: double-size-scale 0.5s alternate infinite;
 }
@@ -13,8 +15,10 @@
     }
 }
 
+
+/* Task 2 */
 .changing-color {
-    animation: changing-color 2s both;
+    animation: changing-color 2s both infinite;
 }
 
 @keyframes changing-color {
@@ -26,6 +30,81 @@
     }
 }
 
+
+/* Task 3 */
 .skew45-20 {
     transform: skew(45deg, 20deg);
+}
+
+
+/* Task 4*/
+.typewriting {
+    width: fit-content;
+}
+
+.typewriting h1 {
+    display: inline-block;
+        
+    overflow: hidden;
+    white-space: nowrap;
+
+    animation: typewriter 8s steps(80, end) forwards,
+               type 0.2s alternate infinite;
+}
+
+@keyframes typewriter {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes type {
+    from {
+        border-right: 3px solid black;
+    }
+    to {
+        border-right: 3px solid orange;
+    }
+}
+
+
+/* Task 5 */
+
+.circle {
+    animation: bounce 1s alternate ease-in infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(100px);
+    }
+}
+
+
+/* Task 8 */
+.blinking {
+    animation: blinky 1s alternate ease-in-out infinite;
+
+}
+
+@keyframes blinky {
+    0% {
+        color: black
+    }
+    100% {
+        color: transparent;
+    }
+    
+}
+
+/* Task 11 */
+.shadow {
+    box-shadow-bottom-right: 10px;
+    
 }
