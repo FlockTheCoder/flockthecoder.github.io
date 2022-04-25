@@ -58,13 +58,14 @@ h1, h2, h3 {
 }
 
 hr {
-    width: 80vw;
+    width: 80%;
     margin: 1rem auto;
     color: #384960
 }
 
 .hr-end {
     margin-bottom:1.5rem;
+    width: 80%;
 }
 
 
@@ -79,8 +80,13 @@ body {
 .main-div {
     width: 100%;
     padding: 1rem 0rem
+    margin: 0 auto;
 }
 
+.body-div {
+    width: 100%;
+    margin: 0 auto;
+}
 
 /* header, footer */
 
@@ -220,7 +226,7 @@ video {
 /* about */
 
 #about > img {
-    width: 80vw;
+    width: 80%;
     display: block;
     margin: 0 auto;
 }
