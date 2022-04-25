@@ -11,7 +11,7 @@ article {
     margin-bottom: 15rem;
 }
 
-.square {
+.square, .rectangle, .circle{
     width: 100px;
     height: 100px;
     
@@ -20,22 +20,12 @@ article {
     display: flex;
     align-content: center;
     justify-content: center;
+
+    text-align: center;
 }
 
 .rectangle {
     width: 200px;
-    height: 100px;
-    
-    background-color: black;
-
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-.square p {
-    color: white;
-    text-align: center;
 }
 
 .circle {
@@ -44,3 +34,6 @@ article {
     border-radius: 100%;
 }
 
+.square p, .rectangle p, .circle p {
+    color: white;
+}
