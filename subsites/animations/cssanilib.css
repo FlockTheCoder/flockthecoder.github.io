@@ -1,5 +1,9 @@
 
 
+/* Animation Library Styles only */
+
+
+/* Task 1 */
 .double-size-scale {
     animation: double-size-scale 0.5s alternate infinite;
 }
@@ -13,8 +17,10 @@
     }
 }
 
+
+/* Task 2 */
 .changing-color {
-    animation: changing-color 2s both;
+    animation: changing-color 2s alternate infinite;
 }
 
 @keyframes changing-color {
@@ -26,6 +32,159 @@
     }
 }
 
+
+/* Task 3 */
 .skew45-20 {
     transform: skew(45deg, 20deg);
+}
+
+
+/* Task 4*/
+.typewriting {
+    width: fit-content;
+}
+
+.typewriting h3 {
+    display: inline-block;
+        
+    overflow: hidden;
+    white-space: nowrap;
+
+    animation: reveal 8s steps(80, end) forwards infinite,
+               type 0.3s alternate infinite;
+}
+
+@keyframes reveal {
+    0% {
+        width: 0;
+    }
+    70% {
+        width: 100%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes type {
+    from {
+        border-right: 3px solid black;
+    }
+    to {
+        border-right: none;
+    }
+}
+
+
+/* Task 5 */
+.bounce {
+    animation: bounce 1s alternate ease-in infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(100px);
+    }
+}
+
+
+/* Task 6 */
+.left-right {
+    margin-left: 0px;
+    margin-right: 0px;
+
+    position: absolute;
+
+    animation: left-right 2s alternate ease-in-out infinite;
+}
+
+@keyframes left-right {
+    from {
+        left: 0%;
+    }
+    to {
+        left: 60%;
+    }
+}
+
+
+/* Task 7 */
+.up-down {
+    position: fixed;
+
+    animation: up-down 2s alternate infinite;
+
+    margin: 0px;
+}
+
+@keyframes up-down {
+    from {
+        top: 0%;
+    }
+    to {
+        top: 20%;
+    }
+}
+
+
+/* Task 8 */
+.blinking {
+    animation: blinky 1s alternate ease-in-out infinite;
+}
+
+@keyframes blinky {
+    0% {
+        color: black;
+    }
+    100% {
+        color: transparent;
+    }
+    
+}
+
+
+/* Task 9 */
+.tvscreen {
+    transform: perspective(300px) translateZ(100px) translateX(10px) rotate3d(1, 1, 1, 45deg);
+    transform-origin: top left;
+}
+
+
+/* Task 10 */
+.text-shadow {
+    font-size: 2rem;
+    text-shadow: 3px 3px 5px;
+}
+
+
+/* Task 11 */
+.box-shadow {
+    box-shadow: 10px 0px white,
+                0px 10px white,
+                0px -10px white,
+                10px -10px blue,
+                10px 10px green;
+                
+}
+
+
+/* Task 12 */
+.circular {
+    animation: circular 3s linear infinite;
+    margin: 200px;
+    
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes circular {
+    from {
+        transform: rotate(0deg) translateX(150px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    }
 }
